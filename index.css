@@ -36,13 +36,16 @@ body {
 
 .hero-section {
   width: 100%;
-  height: 400px;
+  height: 440px;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
+      to right,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.3) 55%,
+      rgba(0, 0, 0, 0.1) 100%
     ),
-    url(placeholder.png);
+    url(sunset_hero.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,40 +57,45 @@ body {
 .hero-section__text {
   color: white;
   margin: 0;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: normal;
   line-height: 1.2;
-  max-width: 560px;
+  max-width: 600px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .hero-section__subtext {
   color: white;
   margin: 0.75rem 0 0;
-  max-width: 520px;
-  font-size: 1.05rem;
+  max-width: 560px;
+  font-size: 1.1rem;
   line-height: 1.5;
-  opacity: 0.95;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.55);
 }
 
 .hero-section__cta {
   display: inline-block;
   align-self: flex-start;
   margin-top: 1.75rem;
-  padding: 0.65rem 1.75rem;
-  background-color: var(--wisteria-blue);
-  color: white;
+  padding: 0.7rem 2rem;
+  background-color: white;
+  color: var(--text-primary);
   font-size: 1rem;
+  font-weight: 600;
   font-family: inherit;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid white;
   border-radius: 2px;
   letter-spacing: 0.5px;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s ease, color 0.2s ease,
+    transform 0.1s ease;
 }
 
 .hero-section__cta:hover {
-  background-color: var(--link-hover);
+  background-color: var(--wisteria-blue);
   color: white;
+  border-color: var(--wisteria-blue);
 }
 
 .hero-section__cta:active {
