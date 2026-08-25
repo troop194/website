@@ -1,10 +1,42 @@
+:root {
+  --wisteria-blue: #7d9ecaff;
+  --cool-steel: #97a8b4ff;
+  --ash-grey: #b6bdbaff;
+  --alabaster-grey: #d9d9d9ff;
+  --white-smoke: #f2f0f0ff;
+}
+
 body {
   margin: 0;
   text-wrap: pretty;
+  background-color: var(--wisteria-blue);
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 5rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+  ),
+  url(placeholder.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section__text {
+  color: white;
+  display: flex;
+  align-self: center;
+  margin: 5rem;
 }
