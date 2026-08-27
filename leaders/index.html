@@ -8,55 +8,89 @@
       name="description"
       content="Information for Troop 194 adult leaders on youth protection and age-appropriate activity guidelines."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="hero-section">
-        <h1 class="hero-section__text">Leaders</h1>
-        <p class="hero-section__subtext">
-          Leaders provide mentoring, guidance, and support for Scouts while
-          encouraging the boy-led environment.
-        </p>
-      </div>
-
-      <div class="content-section">
-        <h2 class="content-section__title">Youth Protection</h2>
-        <div class="content-section__text">
-          <p>
-            Scouts BSA places the greatest importance on creating the most
-            secure environment possible for our youth members. To maintain such
-            an environment, the Scouts BSA developed numerous procedural and
-            leadership selection policies and provides parents and leaders with
-            resources.
-          </p>
-          <p>
-            <a href="https://www.scouting.org/training/youth-protection/"
-              >Learn More</a
-            >
-          </p>
+    <nav class="site-nav">
+      <div class="site-nav__inner">
+        <a class="site-nav__brand" href="/">Troop 194</a>
+        <div class="site-nav__links">
+          <a class="site-nav__link" href="/scouts">Scouts</a>
+          <a class="site-nav__link" href="/parents">Parents &amp; Guardians</a>
+          <a class="site-nav__link site-nav__link--current" href="/leaders"
+            >Leaders</a
+          >
+          <a class="site-nav__link" href="/camping">Weekend Camping</a>
+          <a class="site-nav__link" href="/summer-camp">Summer Camp</a>
         </div>
       </div>
+    </nav>
 
-      <div class="content-section">
-        <h2 class="content-section__title">Age Appropriate Guidelines</h2>
-        <div class="content-section__text">
-          <p>
-            Scouts BSA designed criteria to assist unit leaders in determining
-            what activities are age-appropriate.
-          </p>
-          <p>
-            <a
-              href="https://filestore.scouting.org/filestore/HealthSafety/pdf/680-685.pdf"
-              >Learn More</a
-            >
-          </p>
+    <div class="hero-section hero-section--leaders">
+      <h1 class="hero-section__text">Leaders</h1>
+      <p class="hero-section__subtext">
+        Leaders provide mentoring, guidance, and support for Scouts while
+        encouraging the boy-led environment.
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h2 class="content-section__title">Resources for Leaders</h2>
+      <div class="topic-grid">
+        <div class="topic-card">
+          <h3 class="topic-card__title">Youth Protection</h3>
+          <div class="topic-card__text">
+            <p>
+              Scouts BSA places the greatest importance on creating the most
+              secure environment possible for our youth members. To maintain
+              such an environment, the Scouts BSA developed numerous procedural
+              and leadership selection policies and provides parents and leaders
+              with resources.
+            </p>
+            <p>
+              <a href="https://www.scouting.org/training/youth-protection/"
+                >Learn More</a
+              >
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="content-section">
-        <p><a href="/">&larr; Back to Home</a></p>
+        <div class="topic-card">
+          <h3 class="topic-card__title">Age Appropriate Guidelines</h3>
+          <div class="topic-card__text">
+            <p>
+              Scouts BSA designed criteria to assist unit leaders in determining
+              what activities are age-appropriate.
+            </p>
+            <p>
+              <a
+                href="https://filestore.scouting.org/filestore/HealthSafety/pdf/680-685.pdf"
+                >Learn More</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__brand">Troop 194</p>
+        <nav class="site-footer__links">
+          <a href="/scouts">Scouts</a>
+          <a href="/parents">Parents &amp; Guardians</a>
+          <a href="/leaders">Leaders</a>
+          <a href="/camping">Weekend Camping</a>
+          <a href="/summer-camp">Summer Camp</a>
+        </nav>
+        <p class="site-footer__meta">Troop 194 &middot; Rocky River, Ohio</p>
+      </div>
+    </footer>
   </body>
 </html>

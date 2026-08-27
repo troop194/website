@@ -8,74 +8,104 @@
       name="description"
       content="Information for parents and guardians of Troop 194 Scouts on youth protection, troop support, and merit badge counseling."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="hero-section">
-        <h1 class="hero-section__text">Parents &amp; Guardians</h1>
-      </div>
-
-      <div class="content-section">
-        <h2 class="content-section__title">Youth Protection</h2>
-        <div class="content-section__text">
-          <p>
-            Scouts BSA places the greatest importance on creating the most
-            secure environment possible for our youth members. To maintain such
-            an environment, Scouts BSA developed numerous procedural and
-            leadership selection policies and provides parents and leaders with
-            resources.
-          </p>
-          <p>
-            <a href="https://www.scouting.org/training/youth-protection/"
-              >Learn More</a
-            >
-          </p>
+    <nav class="site-nav">
+      <div class="site-nav__inner">
+        <a class="site-nav__brand" href="/">Troop 194</a>
+        <div class="site-nav__links">
+          <a class="site-nav__link" href="/scouts">Scouts</a>
+          <a class="site-nav__link site-nav__link--current" href="/parents"
+            >Parents &amp; Guardians</a
+          >
+          <a class="site-nav__link" href="/leaders">Leaders</a>
+          <a class="site-nav__link" href="/camping">Weekend Camping</a>
+          <a class="site-nav__link" href="/summer-camp">Summer Camp</a>
         </div>
       </div>
+    </nav>
 
-      <div class="content-section">
-        <h2 class="content-section__title">Troop Support</h2>
-        <div class="content-section__text">
-          <p>
-            You are always welcome to join us on campouts to provide two-deep
-            leadership. We also need drivers, mentors, and leaders. If you have
-            a trailer hitch, you may be our new best friend!
-          </p>
-          <p>
-            <a
-              href="https://a980d65d-92b6-4586-b46e-f158cc6c1b72.filesusr.com/ugd/077cf6_7ed50bf4ed824d18898d26d7beb38a8f.pdf"
-              >Learn More</a
-            >
-          </p>
+    <div class="hero-section hero-section--parents">
+      <h1 class="hero-section__text">Parents &amp; Guardians</h1>
+    </div>
+
+    <div class="content-section">
+      <h2 class="content-section__title">How You Can Help</h2>
+      <div class="topic-grid">
+        <div class="topic-card">
+          <h3 class="topic-card__title">Youth Protection</h3>
+          <div class="topic-card__text">
+            <p>
+              Scouts BSA places the greatest importance on creating the most
+              secure environment possible for our youth members. To maintain
+              such an environment, Scouts BSA developed numerous procedural and
+              leadership selection policies and provides parents and leaders
+              with resources.
+            </p>
+            <p>
+              <a href="https://www.scouting.org/training/youth-protection/"
+                >Learn More</a
+              >
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="content-section">
-        <h2 class="content-section__title">Merit Badge Counselors</h2>
-        <div class="content-section__text">
-          <p>
-            Whatever your area of expertise or interest — whether it is a
-            special craft or hobby (basketry, leatherwork, coin collecting), a
-            profession (veterinary medicine, aviation, engineering), or perhaps
-            a life skill (cooking, personal management, communications) — as a
-            merit badge counselor, you can play a vital role in stirring a young
-            scout's curiosity about that particular topic. By serving as a merit
-            badge counselor, you offer your time, knowledge, and other resources
-            so that Scouts can explore a topic of interest.
-          </p>
-          <p>
-            <a
-              href="https://www.scouting.org/programs/boy-scouts/mb-counselor-guide/"
-              >Learn More</a
-            >
-          </p>
+        <div class="topic-card">
+          <h3 class="topic-card__title">Troop Support</h3>
+          <div class="topic-card__text">
+            <p>
+              You are always welcome to join us on campouts to provide two-deep
+              leadership. We also need drivers, mentors, and leaders. If you
+              have a trailer hitch, you may be our new best friend!
+            </p>
+            <p>
+              <a
+                href="https://a980d65d-92b6-4586-b46e-f158cc6c1b72.filesusr.com/ugd/077cf6_7ed50bf4ed824d18898d26d7beb38a8f.pdf"
+                >Learn More</a
+              >
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="content-section">
-        <p><a href="/">&larr; Back to Home</a></p>
+        <div class="topic-card">
+          <h3 class="topic-card__title">Merit Badge Counselors</h3>
+          <div class="topic-card__text">
+            <p>
+              Whatever your area of expertise or interest &mdash; a craft or
+              hobby, a profession, or a life skill &mdash; as a merit badge
+              counselor, you offer your time and knowledge so that Scouts can
+              explore a topic of interest.
+            </p>
+            <p>
+              <a
+                href="https://www.scouting.org/programs/boy-scouts/mb-counselor-guide/"
+                >Learn More</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__brand">Troop 194</p>
+        <nav class="site-footer__links">
+          <a href="/scouts">Scouts</a>
+          <a href="/parents">Parents &amp; Guardians</a>
+          <a href="/leaders">Leaders</a>
+          <a href="/camping">Weekend Camping</a>
+          <a href="/summer-camp">Summer Camp</a>
+        </nav>
+        <p class="site-footer__meta">Troop 194 &middot; Rocky River, Ohio</p>
+      </div>
+    </footer>
   </body>
 </html>
