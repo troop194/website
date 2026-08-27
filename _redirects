@@ -1,0 +1,9 @@
+# Cloudflare Pages redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Redirects to home from some file paths
+/.gitignore     /   301
+/.node-version  /   301
+/.prettierrc    /   301
+/README.md      /   301
+/home           /   301

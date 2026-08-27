@@ -1,3 +1,4 @@
 .zed/settings.json
 .DS_Store
 wix_files/
+.wrangler

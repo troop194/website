@@ -8,7 +8,7 @@ Production: ![https://website-9eu.pages.dev/]
 Old Page which we are trying to replicate: ![https://troop194webmaster.wixsite.com/t194rockyriverohio]
 
 ## Development
-Run a simple web server with Python for a simple setup:
+Run Cloudflare's Pages development CLI for development, you will need `node`. ![https://nodejs.org/en/download]
 ```
-python -m http.server
+npx wrangler pages dev .
 ```
