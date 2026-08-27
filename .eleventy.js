@@ -1,14 +1,12 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("index.css");
-  eleventyConfig.addPassthroughCopy("troop-194-example-calendar.pdf");
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy("_redirects");
 
   return {
     templateFormats: ["html", "njk"],
     htmlTemplateEngine: "njk",
     dir: {
-      input: ".",
+      input: "src",
       includes: "_includes",
       output: "_site",
     },

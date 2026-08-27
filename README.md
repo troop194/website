@@ -8,7 +8,7 @@ Production: ![https://website-9eu.pages.dev/]
 Old Page which we are trying to replicate: ![https://troop194webmaster.wixsite.com/t194rockyriverohio]
 
 ## Development
-Pages are built with [Eleventy](https://www.11ty.dev/) so the shared nav and footer only live in one place (`_includes/`). You will need `node`. ![https://nodejs.org/en/download]
+Pages are built with [Eleventy](https://www.11ty.dev/) so the shared nav and footer only live in one place (`src/_includes/`). Page source lives in `src/`, with static files (images, CSS, the calendar PDF) under `src/assets/`. You will need `node`. ![https://nodejs.org/en/download]
 
 Install dependencies once:
 ```
@@ -31,5 +31,5 @@ npm run preview
 ```
 
 ### Cloudflare Pages project settings
-Build command: `npx eleventy`
+Build command: `npx @11ty/eleventy`
 Build output directory: `_site`
