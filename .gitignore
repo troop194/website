@@ -1,4 +1,7 @@
+.claude/
 .zed/
 .DS_Store
 wix_files/
 .wrangler/
+node_modules/
+_site/

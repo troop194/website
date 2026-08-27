@@ -1,0 +1,32 @@
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="/">Troop 194</a>
+    <div class="site-nav__links">
+      <a
+        class="site-nav__link{% if current == 'scouts' %} site-nav__link--current{% endif %}"
+        href="/scouts"
+        >Scouts</a
+      >
+      <a
+        class="site-nav__link{% if current == 'parents' %} site-nav__link--current{% endif %}"
+        href="/parents"
+        >Parents &amp; Guardians</a
+      >
+      <a
+        class="site-nav__link{% if current == 'leaders' %} site-nav__link--current{% endif %}"
+        href="/leaders"
+        >Leaders</a
+      >
+      <a
+        class="site-nav__link{% if current == 'camping' %} site-nav__link--current{% endif %}"
+        href="/camping"
+        >Weekend Camping</a
+      >
+      <a
+        class="site-nav__link{% if current == 'summer-camp' %} site-nav__link--current{% endif %}"
+        href="/summer-camp"
+        >Summer Camp</a
+      >
+    </div>
+  </div>
+</nav>

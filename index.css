@@ -254,8 +254,6 @@ h2 {
   color: var(--ink);
 }
 
-
-
 .content-section__subtitle {
   color: var(--ink-soft);
   font-style: italic;
@@ -418,20 +416,28 @@ a:hover {
   color: white;
 }
 
-.site-footer__links {
+.site-footer__follow {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem 1.5rem;
-  font-size: 0.82rem;
+  align-items: baseline;
+  gap: 0.6rem;
 }
 
-.site-footer__links a {
+.site-footer__follow-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.site-footer__social {
+  font-size: 0.9rem;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.72);
   text-decoration-color: rgba(255, 255, 255, 0.32);
 }
 
-.site-footer__links a:hover {
+.site-footer__social:hover {
   color: white;
   text-decoration-color: currentColor;
 }

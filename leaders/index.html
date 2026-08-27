@@ -1,3 +1,7 @@
+---
+current: leaders
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,20 +21,7 @@
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <nav class="site-nav">
-      <div class="site-nav__inner">
-        <a class="site-nav__brand" href="/">Troop 194</a>
-        <div class="site-nav__links">
-          <a class="site-nav__link" href="/scouts">Scouts</a>
-          <a class="site-nav__link" href="/parents">Parents &amp; Guardians</a>
-          <a class="site-nav__link site-nav__link--current" href="/leaders"
-            >Leaders</a
-          >
-          <a class="site-nav__link" href="/camping">Weekend Camping</a>
-          <a class="site-nav__link" href="/summer-camp">Summer Camp</a>
-        </div>
-      </div>
-    </nav>
+    {% include "nav.html" %}
 
     <div class="hero-section hero-section--leaders">
       <h1 class="hero-section__text">Leaders</h1>
@@ -79,18 +70,6 @@
       </div>
     </div>
 
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p class="site-footer__brand">Troop 194</p>
-        <nav class="site-footer__links">
-          <a href="/scouts">Scouts</a>
-          <a href="/parents">Parents &amp; Guardians</a>
-          <a href="/leaders">Leaders</a>
-          <a href="/camping">Weekend Camping</a>
-          <a href="/summer-camp">Summer Camp</a>
-        </nav>
-        <p class="site-footer__meta">Troop 194 &middot; Rocky River, Ohio</p>
-      </div>
-    </footer>
+    {% include "footer.html" %}
   </body>
 </html>
