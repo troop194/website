@@ -97,7 +97,7 @@ h2 {
 .hero-section {
   --hero-image: url(images/sunset_hero.jpg);
   width: 100%;
-  min-height: 400px;
+  min-height: 440px;
   background-image:
     linear-gradient(
       to right,
@@ -141,11 +141,12 @@ h2 {
 .hero-section__text {
   color: white;
   margin: 0;
-  font-size: 2.6rem;
-  font-weight: 500;
-  line-height: 1.2;
-  max-width: 600px;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  max-width: 680px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
 }
 
 .hero-section__subtext {
@@ -162,13 +163,13 @@ h2 {
   align-self: flex-start;
   margin-top: 1.85rem;
   padding: 0.75rem 2.1rem;
-  background-color: var(--surface);
-  color: var(--forest-dark);
+  background-color: var(--gold-light);
+  color: var(--ink);
   font-size: 0.95rem;
   font-weight: 600;
   font-family: inherit;
   text-decoration: none;
-  border: 1px solid var(--surface);
+  border: 1px solid var(--gold-light);
   border-radius: 3px;
   letter-spacing: 0.04em;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
@@ -453,11 +454,11 @@ a:hover {
 
   .hero-section {
     padding-block: 2.5rem;
-    min-height: 340px;
+    min-height: 380px;
   }
 
   .hero-section__text {
-    font-size: 2.1rem;
+    font-size: 2.8rem;
   }
 
   .content-section {
