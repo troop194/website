@@ -244,9 +244,6 @@ h2 {
 }
 
 .content-section__title {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
   margin: 0 0 1.5rem;
   font-size: 1.6rem;
   font-weight: 600;
