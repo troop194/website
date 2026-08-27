@@ -48,9 +48,6 @@ npm run preview
 
 ### Cloudflare Pages project settings
 
-`wrangler.toml` sets `pages_build_output_dir = "_site"`, so the dashboard's
-build output directory field can be left as-is or blank. The build command still
-has to be set in the dashboard (Cloudflare Pages doesn't read it from
-`wrangler.toml`):
-
 Build command: `npx @11ty/eleventy`
+
+Build output directory: `_site`
