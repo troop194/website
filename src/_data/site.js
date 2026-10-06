@@ -1,5 +1,5 @@
 module.exports = {
-  base: "https://website-9eu.pages.dev",
+  base: "https://troop194rockyriver.org",
   name: "Troop 194",
   fullName: "Scouts BSA Troop 194, Rocky River Ohio",
   defaultOgImage: "/assets/images/sunset_hero.webp",
