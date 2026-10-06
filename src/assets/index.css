@@ -169,7 +169,7 @@ h2 {
 /* Hero */
 
 .hero-section {
-  --hero-image: url(images/sunset_hero.jpg);
+  --hero-image: url(images/sunset_hero.webp);
   width: 100%;
   min-height: 440px;
   background-image:
@@ -192,24 +192,24 @@ h2 {
 }
 
 .hero-section--creek {
-  --hero-image: url(images/scouts_creek_crossing.jpg);
+  --hero-image: url(images/scouts_creek_crossing.webp);
 }
 
 .hero-section--camping {
-  --hero-image: url(images/camping_hero.jpg);
+  --hero-image: url(images/camping_hero.webp);
 }
 
 .hero-section--summer-camp {
-  --hero-image: url(images/summer_camp_hero.jpg);
+  --hero-image: url(images/summer_camp_hero.webp);
   background-position: center 30%;
 }
 
 .hero-section--leaders {
-  --hero-image: url(images/leaders_hero.jpg);
+  --hero-image: url(images/leaders_hero.webp);
 }
 
 .hero-section--parents {
-  --hero-image: url(images/parents_hero.jpg);
+  --hero-image: url(images/parents_hero.webp);
 }
 
 .hero-section__text {

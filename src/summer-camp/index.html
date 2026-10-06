@@ -9,8 +9,38 @@ current: summer-camp
     <title>Summer Camp | Troop 194 — Rocky River, Ohio</title>
     <meta
       name="description"
-      content="Troop 194 spends a week each July at Beaumont Scout Reservation for summer camp, with over 100 merit badges offered."
+      content="Scouts BSA Troop 194 of Rocky River, Ohio spends a week each July at Beaumont Scout Reservation for summer camp, with over 100 merit badges offered."
     />
+    <link rel="canonical" href="https://website-9eu.pages.dev/summer-camp/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Troop 194" />
+    <meta property="og:title" content="Summer Camp | Troop 194 — Rocky River, Ohio" />
+    <meta
+      property="og:description"
+      content="Scouts BSA Troop 194 of Rocky River, Ohio spends a week each July at Beaumont Scout Reservation for summer camp, with over 100 merit badges offered."
+    />
+    <meta property="og:url" content="https://website-9eu.pages.dev/summer-camp/" />
+    <meta property="og:image" content="https://website-9eu.pages.dev/assets/images/summer_camp_hero.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Summer Camp | Troop 194 — Rocky River, Ohio" />
+    <meta
+      name="twitter:description"
+      content="Scouts BSA Troop 194 of Rocky River, Ohio spends a week each July at Beaumont Scout Reservation for summer camp, with over 100 merit badges offered."
+    />
+    <meta name="twitter:image" content="https://website-9eu.pages.dev/assets/images/summer_camp_hero.webp" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://website-9eu.pages.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Summer Camp", "item": "https://website-9eu.pages.dev/summer-camp/" }
+      ]
+    }
+    </script>
   </head>
   <body>
     {% include "nav.html" %}
@@ -41,8 +71,11 @@ current: summer-camp
         <a class="link-card" href="https://lecbsa.org/beaumont/">
           <img
             class="link-card__image"
-            src="/assets/images/beaumont.jpg"
-            alt=""
+            src="/assets/images/beaumont.webp"
+            alt="Beaumont Scout Reservation, Troop 194's summer camp location"
+            width="700"
+            height="419"
+            loading="lazy"
           />
           <span class="link-card__label">Beaumont Scout Reservation</span>
         </a>
