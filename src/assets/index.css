@@ -92,12 +92,86 @@ h2 {
   color: var(--forest);
 }
 
+.site-nav__toggle {
+  display: none;
+  align-items: center;
+  gap: 0.6rem;
+  background: none;
+  border: none;
+  padding: 0.4rem 0.1rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.site-nav__toggle:hover {
+  color: var(--forest);
+}
+
+.site-nav__toggle-icon,
+.site-nav__toggle-icon::before,
+.site-nav__toggle-icon::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: currentColor;
+}
+
+.site-nav__toggle-icon {
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+
+.site-nav__toggle-icon::before,
+.site-nav__toggle-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition:
+    transform 0.15s ease,
+    top 0.15s ease;
+}
+
+.site-nav__toggle-icon::before {
+  top: -6px;
+}
+
+.site-nav__toggle-icon::after {
+  top: 6px;
+}
+
+.site-nav--open .site-nav__toggle-icon {
+  background-color: transparent;
+}
+
+.site-nav--open .site-nav__toggle-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.site-nav--open .site-nav__toggle-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav__toggle-icon,
+  .site-nav__toggle-icon::before,
+  .site-nav__toggle-icon::after {
+    transition: none;
+  }
+}
+
 /* Hero */
 
 .hero-section {
-  --hero-image: url(images/sunset_hero.jpg);
+  --hero-image: url(images/sunset_hero.webp);
   width: 100%;
-  min-height: 400px;
+  min-height: 440px;
   background-image:
     linear-gradient(
       to right,
@@ -118,34 +192,35 @@ h2 {
 }
 
 .hero-section--creek {
-  --hero-image: url(images/scouts_creek_crossing.jpg);
+  --hero-image: url(images/scouts_creek_crossing.webp);
 }
 
 .hero-section--camping {
-  --hero-image: url(images/camping_hero.jpg);
+  --hero-image: url(images/camping_hero.webp);
 }
 
 .hero-section--summer-camp {
-  --hero-image: url(images/summer_camp_hero.jpg);
+  --hero-image: url(images/summer_camp_hero.webp);
   background-position: center 30%;
 }
 
 .hero-section--leaders {
-  --hero-image: url(images/leaders_hero.jpg);
+  --hero-image: url(images/leaders_hero.webp);
 }
 
 .hero-section--parents {
-  --hero-image: url(images/parents_hero.jpg);
+  --hero-image: url(images/parents_hero.webp);
 }
 
 .hero-section__text {
   color: white;
   margin: 0;
-  font-size: 2.6rem;
-  font-weight: 500;
-  line-height: 1.2;
-  max-width: 600px;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  max-width: 680px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
 }
 
 .hero-section__subtext {
@@ -162,13 +237,13 @@ h2 {
   align-self: flex-start;
   margin-top: 1.85rem;
   padding: 0.75rem 2.1rem;
-  background-color: var(--surface);
-  color: var(--forest-dark);
+  background-color: var(--gold-light);
+  color: var(--ink);
   font-size: 0.95rem;
   font-weight: 600;
   font-family: inherit;
   text-decoration: none;
-  border: 1px solid var(--surface);
+  border: 1px solid var(--gold-light);
   border-radius: 3px;
   letter-spacing: 0.04em;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
@@ -244,17 +319,12 @@ h2 {
 }
 
 .content-section__title {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
   margin: 0 0 1.5rem;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.3;
   color: var(--ink);
 }
-
-
 
 .content-section__subtitle {
   color: var(--ink-soft);
@@ -418,20 +488,28 @@ a:hover {
   color: white;
 }
 
-.site-footer__links {
+.site-footer__follow {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem 1.5rem;
-  font-size: 0.82rem;
+  align-items: baseline;
+  gap: 0.6rem;
 }
 
-.site-footer__links a {
+.site-footer__follow-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.site-footer__social {
+  font-size: 0.9rem;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.72);
   text-decoration-color: rgba(255, 255, 255, 0.32);
 }
 
-.site-footer__links a:hover {
+.site-footer__social:hover {
   color: white;
   text-decoration-color: currentColor;
 }
@@ -448,13 +526,34 @@ a:hover {
     font-size: 16px;
   }
 
+  .site-nav__toggle {
+    display: inline-flex;
+  }
+
+  .site-nav__links {
+    display: none;
+    flex: 1 0 100%;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0.5rem;
+  }
+
+  .site-nav--open .site-nav__links {
+    display: flex;
+  }
+
+  .site-nav__links .site-nav__link {
+    padding: 0.7rem 0;
+    border-top: 1px solid var(--rule);
+  }
+
   .hero-section {
     padding-block: 2.5rem;
-    min-height: 340px;
+    min-height: 380px;
   }
 
   .hero-section__text {
-    font-size: 2.1rem;
+    font-size: 2.8rem;
   }
 
   .content-section {

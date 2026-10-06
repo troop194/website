@@ -1,0 +1,97 @@
+---
+current: camping
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "head.html" %}
+    <title>Weekend Camping | Troop 194 — Rocky River, Ohio</title>
+    <meta
+      name="description"
+      content="Scouts BSA Troop 194 of Rocky River, Ohio camps monthly at favorites like Beaumont and Firelands Scout Reservations and Findley State Park."
+    />
+    <link rel="canonical" href="{{ site.base }}/camping/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Troop 194" />
+    <meta property="og:title" content="Weekend Camping | Troop 194 — Rocky River, Ohio" />
+    <meta
+      property="og:description"
+      content="Scouts BSA Troop 194 of Rocky River, Ohio camps monthly at favorites like Beaumont and Firelands Scout Reservations and Findley State Park."
+    />
+    <meta property="og:url" content="{{ site.base }}/camping/" />
+    <meta property="og:image" content="{{ site.base }}/assets/images/camping_hero.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Weekend Camping | Troop 194 — Rocky River, Ohio" />
+    <meta
+      name="twitter:description"
+      content="Scouts BSA Troop 194 of Rocky River, Ohio camps monthly at favorites like Beaumont and Firelands Scout Reservations and Findley State Park."
+    />
+    <meta name="twitter:image" content="{{ site.base }}/assets/images/camping_hero.webp" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.base }}/" },
+        { "@type": "ListItem", "position": 2, "name": "Weekend Camping", "item": "{{ site.base }}/camping/" }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    {% include "nav.html" %}
+
+    <div class="hero-section hero-section--camping">
+      <h1 class="hero-section__text">Weekend Camping</h1>
+      <p class="hero-section__subtext">
+        We have monthly weekend campouts throughout the year. We camp in many
+        different places, but these are our favorites!
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h2 class="content-section__title">Favorite Camping Locations</h2>
+      <div class="link-cards">
+        <a class="link-card" href="https://lecbsa.org/beaumont/">
+          <img
+            class="link-card__image"
+            src="/assets/images/beaumont.webp"
+            alt="Beaumont Scout Reservation near Cleveland, where Troop 194 camps and goes to summer camp"
+            width="700"
+            height="419"
+            loading="lazy"
+          />
+          <span class="link-card__label">Beaumont Scout Reservation</span>
+        </a>
+        <a class="link-card" href="https://lecbsa.org/firelands/">
+          <img
+            class="link-card__image"
+            src="/assets/images/firelands.webp"
+            alt="Firelands Scout Reservation, a Lake Erie Council camp on Lake Erie"
+            width="700"
+            height="467"
+            loading="lazy"
+          />
+          <span class="link-card__label">Firelands Scout Reservation</span>
+        </a>
+        <a class="link-card" href="http://parks.ohiodnr.gov/findley">
+          <img
+            class="link-card__image"
+            src="/assets/images/findley.webp"
+            alt="Findley State Park campground in the Cuyahoga Valley"
+            width="800"
+            height="450"
+            loading="lazy"
+          />
+          <span class="link-card__label">Findley State Park</span>
+        </a>
+      </div>
+    </div>
+
+    {% include "footer.html" %}
+  </body>
+</html>

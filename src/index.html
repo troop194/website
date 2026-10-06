@@ -1,34 +1,34 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Troop 194 — Rocky River, Ohio</title>
+    {% include "head.html" %}
+    <title>Troop 194 | Scouts BSA — Rocky River, Ohio</title>
     <meta
       name="description"
-      content="Troop 194 of Rocky River, Ohio. A boy-led troop meeting Tuesdays at Rocky River United Methodist Church."
+      content="Scouts BSA Troop 194 is a boy-led Scout troop in Rocky River, Ohio, serving the community for over 100 years. Meets Tuesdays at Rocky River United Methodist Church."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap"
-      rel="stylesheet"
+    <link rel="canonical" href="{{ site.base }}/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Troop 194" />
+    <meta property="og:title" content="Troop 194 | Scouts BSA — Rocky River, Ohio" />
+    <meta
+      property="og:description"
+      content="Scouts BSA Troop 194 is a boy-led Scout troop in Rocky River, Ohio, serving the community for over 100 years. Meets Tuesdays at Rocky River United Methodist Church."
     />
-    <link rel="stylesheet" href="index.css" />
+    <meta property="og:url" content="{{ site.base }}/" />
+    <meta property="og:image" content="{{ site.base }}/assets/images/sunset_hero.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Troop 194 | Scouts BSA — Rocky River, Ohio" />
+    <meta
+      name="twitter:description"
+      content="Scouts BSA Troop 194 is a boy-led Scout troop in Rocky River, Ohio, serving the community for over 100 years. Meets Tuesdays at Rocky River United Methodist Church."
+    />
+    <meta name="twitter:image" content="{{ site.base }}/assets/images/sunset_hero.webp" />
   </head>
   <body>
-    <nav class="site-nav">
-      <div class="site-nav__inner">
-        <a class="site-nav__brand" href="/">Troop 194</a>
-        <div class="site-nav__links">
-          <a class="site-nav__link" href="/scouts">Scouts</a>
-          <a class="site-nav__link" href="/parents">Parents &amp; Guardians</a>
-          <a class="site-nav__link" href="/leaders">Leaders</a>
-          <a class="site-nav__link" href="/camping">Weekend Camping</a>
-          <a class="site-nav__link" href="/summer-camp">Summer Camp</a>
-        </div>
-      </div>
-    </nav>
+    {% include "nav.html" %}
 
     <div class="hero-section">
       <h1 class="hero-section__text">Welcome to Troop 194!</h1>
@@ -70,11 +70,9 @@
         <p>
           For safety and privacy reasons, we cannot share the current calendar.
           Attached is our
-          <a href="/troop-194-example-calendar.pdf">2017 calendar</a>
+          <a href="/assets/troop-194-example-calendar.pdf">2017 calendar</a>
           to give you an idea of what we do.
         </p>
-
-        <p>We meet on Tuesdays from 7:00 pm - 8:30 pm.</p>
 
         <p>
           Troop 194 has monthly outings. Descriptions of common destinations are
@@ -135,33 +133,9 @@
         </p>
 
         <p>
-          Troop 194 has monthly outings. Descriptions of common destinations are
-          on the "Weekend Camping" page.
-        </p>
-
-        <p>
           We incorporate the 8 methods of scouting as a way to help the scouts
           have the most fun and benefit from their participation.
         </p>
-
-        <p>For more information about Troop 194 scouts BSA unit:</p>
-        <ul>
-          <li>
-            Visit
-            <a
-              href="https://beascout.scouting.org/units/41e6263e-9729-4aed-9f7b-0459e8f4e7c8"
-              >www.beascout.org</a
-            >
-          </li>
-          <li>
-            Email the New Member Coordinator at
-            <a href="mailto:t194scoutmn@gmail.com">t194scoutmn@gmail.com</a>
-          </li>
-          <li>
-            Call the Lake Erie Council Service Center
-            <a href="tel:2168616060">(216) 861-6060</a>
-          </li>
-        </ul>
       </div>
     </div>
 
@@ -172,17 +146,34 @@
         <a class="link-card" href="/scouts">
           <img
             class="link-card__image"
-            src="images/scouts_creek_crossing.jpg"
-            alt=""
+            src="/assets/images/scouts_creek_crossing.webp"
+            alt="Troop 194 Scouts in a river wearing their Scout uniforms"
+            width="1600"
+            height="1200"
+            loading="lazy"
           />
           <span class="link-card__label">Scouts</span>
         </a>
         <a class="link-card" href="/parents">
-          <img class="link-card__image" src="images/parents_hero.jpg" alt="" />
+          <img
+            class="link-card__image"
+            src="/assets/images/parents_hero.webp"
+            alt="Scouts and their parents around a campfire outdoors"
+            width="1400"
+            height="1050"
+            loading="lazy"
+          />
           <span class="link-card__label">Parents and Guardians</span>
         </a>
         <a class="link-card" href="/leaders">
-          <img class="link-card__image" src="images/leaders_hero.jpg" alt="" />
+          <img
+            class="link-card__image"
+            src="/assets/images/leaders_hero.webp"
+            alt="Adult Scout leader talking with a youth Scout at a camp site"
+            width="788"
+            height="1400"
+            loading="lazy"
+          />
           <span class="link-card__label">Leaders</span>
         </a>
       </div>
@@ -192,14 +183,24 @@
       <h2 class="content-section__title">Camping</h2>
       <div class="link-cards">
         <a class="link-card" href="/camping">
-          <img class="link-card__image" src="images/camping_hero.jpg" alt="" />
+          <img
+            class="link-card__image"
+            src="/assets/images/camping_hero.webp"
+            alt="Scout campsite with tents at a weekend camping trip"
+            width="1400"
+            height="827"
+            loading="lazy"
+          />
           <span class="link-card__label">Weekend Camping</span>
         </a>
         <a class="link-card" href="/summer-camp">
           <img
             class="link-card__image"
-            src="images/summer_camp_hero.jpg"
-            alt=""
+            src="/assets/images/summer_camp_hero.webp"
+            alt="Summer camp at a Scout reservation with tents along a lake"
+            width="1400"
+            height="1050"
+            loading="lazy"
           />
           <span class="link-card__label">Summer Camp</span>
         </a>
@@ -239,51 +240,6 @@
             selfishness.
           </li>
         </ul>
-
-        <p>
-          We like to think those contrasts are some of Scouting’s greatest
-          strengths:
-        </p>
-
-        <ul>
-          <li>
-            The skills learned during our outdoor experiences are used
-            throughout one’s life. Organization skills. Learning how to plan,
-            prepare, and execute. Dealing with moments of adversity. Learning
-            how to work as a group. Knowing how to set an example, and how to
-            teach.
-          </li>
-
-          <li>
-            The values Scouting focuses on are not old fashioned, they are
-            timeless. Those twelve words describe our best leaders, most
-            effective teachers, and dearest friends. Even if a person is only is
-            able to apply a few of these values, their life, and the lives of
-            everyone around will be enriched.
-          </li>
-        </ul>
-
-        <p>
-          We understand that youth today have many demands on their time. Our
-          troop has Scouts that juggle band, choir, sports, and numerous other
-          activities including part-time jobs. We encourage them to join us when
-          possible, and they appreciate the opportunity to get out of the house,
-          hang with the guys, and do things they wouldn’t otherwise be able to
-          do. Scouts gain from these experiences and form deep friendships with
-          others.
-        </p>
-
-        <p>
-          We think it is important that one does not have to be the biggest,
-          strongest, or fastest to succeed in this program. It is a testament
-          that even if men were only involved in Scouting for a short time, they
-          acknowledge still using things they learned. For those that
-          participate for a longer period of time, we know that men keep “Eagle
-          Scout” on their resume much longer than “Captain of Sports Team”.
-          Eagles do not just know how to get things done, they also know how to
-          get others around them to succeed. And yes, Scouts get scholarships
-          too.
-        </p>
       </div>
     </div>
 
@@ -295,21 +251,13 @@
         <p>
           <a href="mailto:t194scoutmn@gmail.com">t194scoutmn@gmail.com</a>
         </p>
+        <p>
+          Lake Erie Council Service Center
+          <a href="tel:2168616060">(216) 861-6060</a>
+        </p>
       </address>
     </div>
 
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p class="site-footer__brand">Troop 194</p>
-        <nav class="site-footer__links">
-          <a href="/scouts">Scouts</a>
-          <a href="/parents">Parents &amp; Guardians</a>
-          <a href="/leaders">Leaders</a>
-          <a href="/camping">Weekend Camping</a>
-          <a href="/summer-camp">Summer Camp</a>
-        </nav>
-        <p class="site-footer__meta">Troop 194 &middot; Rocky River, Ohio</p>
-      </div>
-    </footer>
+    {% include "footer.html" %}
   </body>
 </html>

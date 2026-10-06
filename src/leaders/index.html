@@ -1,36 +1,49 @@
+---
+current: leaders
+---
+
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include "head.html" %}
     <title>Leaders | Troop 194 — Rocky River, Ohio</title>
     <meta
       name="description"
-      content="Information for Troop 194 adult leaders on youth protection and age-appropriate activity guidelines."
+      content="Information for Scouts BSA Troop 194 adult leaders in Rocky River, Ohio on youth protection and age-appropriate activity guidelines."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap"
-      rel="stylesheet"
+    <link rel="canonical" href="{{ site.base }}/leaders/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Troop 194" />
+    <meta property="og:title" content="Leaders | Troop 194 — Rocky River, Ohio" />
+    <meta
+      property="og:description"
+      content="Information for Scouts BSA Troop 194 adult leaders in Rocky River, Ohio on youth protection and age-appropriate activity guidelines."
     />
-    <link rel="stylesheet" href="/index.css" />
+    <meta property="og:url" content="{{ site.base }}/leaders/" />
+    <meta property="og:image" content="{{ site.base }}/assets/images/sunset_hero.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Leaders | Troop 194 — Rocky River, Ohio" />
+    <meta
+      name="twitter:description"
+      content="Information for Scouts BSA Troop 194 adult leaders in Rocky River, Ohio on youth protection and age-appropriate activity guidelines."
+    />
+    <meta name="twitter:image" content="{{ site.base }}/assets/images/sunset_hero.webp" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.base }}/" },
+        { "@type": "ListItem", "position": 2, "name": "Leaders", "item": "{{ site.base }}/leaders/" }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <nav class="site-nav">
-      <div class="site-nav__inner">
-        <a class="site-nav__brand" href="/">Troop 194</a>
-        <div class="site-nav__links">
-          <a class="site-nav__link" href="/scouts">Scouts</a>
-          <a class="site-nav__link" href="/parents">Parents &amp; Guardians</a>
-          <a class="site-nav__link site-nav__link--current" href="/leaders"
-            >Leaders</a
-          >
-          <a class="site-nav__link" href="/camping">Weekend Camping</a>
-          <a class="site-nav__link" href="/summer-camp">Summer Camp</a>
-        </div>
-      </div>
-    </nav>
+    {% include "nav.html" %}
 
     <div class="hero-section hero-section--leaders">
       <h1 class="hero-section__text">Leaders</h1>
@@ -79,18 +92,6 @@
       </div>
     </div>
 
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p class="site-footer__brand">Troop 194</p>
-        <nav class="site-footer__links">
-          <a href="/scouts">Scouts</a>
-          <a href="/parents">Parents &amp; Guardians</a>
-          <a href="/leaders">Leaders</a>
-          <a href="/camping">Weekend Camping</a>
-          <a href="/summer-camp">Summer Camp</a>
-        </nav>
-        <p class="site-footer__meta">Troop 194 &middot; Rocky River, Ohio</p>
-      </div>
-    </footer>
+    {% include "footer.html" %}
   </body>
 </html>

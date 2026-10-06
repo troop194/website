@@ -1,0 +1,13 @@
+{
+  "name": "troop194-website",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "preview": "eleventy && wrangler pages dev _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "wrangler": "^4.0.0"
+  }
+}
