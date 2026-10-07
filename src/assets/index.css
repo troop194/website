@@ -59,11 +59,20 @@ h2 {
 }
 
 .site-nav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: "Source Serif 4", Georgia, serif;
   font-weight: 600;
   font-size: 1.15rem;
   color: var(--ink);
   text-decoration: none;
+}
+
+.site-nav__logo {
+  display: block;
+  width: auto;
+  height: 2.75rem;
 }
 
 .site-nav__brand:hover {
